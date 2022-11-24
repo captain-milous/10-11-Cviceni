@@ -11,7 +11,7 @@
 </head>
 <body class="font-weight-bolder">
 <!-- Header -->
-  <div class="p-3 fixed text-bg-dark">
+  <div class="p-3 fixed-top text-bg-dark">
     <div class="container">
       <header class="d-flex flex-wrap justify-content-center ">
         <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
@@ -26,9 +26,125 @@
       </header>
     </div>
   </div>
+  <br>
+  <br>
+  <br>
+<!-- Content -->
+  
+<!-- Toast -->
+  <div aria-live="polite" aria-atomic="true" class="position-relative">
+    <!-- Position it: -->
+    <!-- - `.toast-container` for spacing between toasts -->
+    <!-- - `.position-absolute`, `top-0` & `end-0` to position the toasts in the upper right corner -->
+    <!-- - `.p-3` to prevent the toasts from sticking to the edge of the container  -->
+    <div class="toast-container position-absolute top-0 end-0 p-3">
 
-  <!-- Footer -->
-  <div class="container-fluid fixed-bottom bg-dark">
+      <!-- Then put toasts within -->
+      <div id="liveToast2" class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="images/felicie.jpg" class="rounded me-2" alt="felicie" height="30px" width="30px">
+          <strong class="me-auto">Akční cena na Felicii!</strong>
+          <small class="text-muted">just now</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Neváhej a kupuj, teď!
+        </div>
+      </div>
+
+      <div id="liveToast1" class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="images/cookies.jpg" class="rounded me-2" alt="cookies" height="30px" width="30px">
+          <strong class="me-auto">Cookies</strong>
+          <small class="text-muted">2 seconds ago</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Přijmout soubory cookies?
+          <div class="mt-2 pt-2 border-top">
+            <button type="button" class="btn btn-primary btn-sm" data-bs-dismiss="toast">Ano</button>
+            <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="toast">Ne</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Scrollspy -->
+<br>
+
+  <div class="p-3 position-absolute">
+    <div class="container">
+      <nav class="d-flex flex-wrap justify-content-center ">
+          <ul class="nav nav-pills">
+          <li class="nav-item"><a class="nav-link group-item-action" href="#list-item-1">Item 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="#list-item-2">Item 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="#list-item-3">Item 3</a></li>
+          <li class="nav-item"><a class="nav-link" href="#list-item-4">Item 4</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  
+  <div class="row">
+  <div class="col-4">x</div>
+  <div class="col-3 sticky-top">
+    <br>
+    <div id="list-example" class="list-group">
+      <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+    </div>
+  </div>
+
+  
+
+  <div class="col-2">x</div>
+  <div class="col-8">
+    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+      <h4 id="list-item-1">Item 1</h4>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc tincidunt ante vitae massa. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Duis risus. Donec iaculis gravida nulla. Nunc auctor. Vivamus porttitor turpis ac leo. Etiam posuere lacus quis dolor. Nunc auctor. Nullam faucibus mi quis velit. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Nunc dapibus tortor vel mi dapibus sollicitudin. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. In dapibus augue non sapien.</p>
+
+      <p>Nullam at arcu a est sollicitudin euismod. Fusce aliquam vestibulum ipsum. Curabitur bibendum justo non orci. Quisque tincidunt scelerisque libero. Morbi scelerisque luctus velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer malesuada. Etiam posuere lacus quis dolor. Maecenas lorem. Aliquam erat volutpat. Et harum quidem rerum facilis est et expedita distinctio.</p>
+
+      <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Curabitur bibendum justo non orci. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Cras elementum. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Morbi scelerisque luctus velit. Praesent id justo in neque elementum ultrices. Integer imperdiet lectus quis justo. Etiam dictum tincidunt diam. Aliquam erat volutpat. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Integer lacinia. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est.</p>
+
+      <p>Integer malesuada. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Proin mattis lacinia justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque porta. Donec quis nibh at felis congue commodo. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Proin mattis lacinia justo. Aliquam ornare wisi eu metus. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+
+      <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. Integer malesuada. Duis bibendum, lectus ut viverra rhoncus, dolor nunc faucibus libero, eget facilisis enim ipsum id lacus. Duis pulvinar. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus. Duis viverra diam non justo. Ut tempus purus at lorem. Praesent id justo in neque elementum ultrices. Suspendisse nisl. Etiam quis quam. Fusce suscipit libero eget elit. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Phasellus et lorem id felis nonummy placerat.</p>
+      <h4 id="list-item-2">Item 2</h4>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Morbi leo mi, nonummy eget tristique non, rhoncus non leo. Mauris elementum mauris vitae tortor. Curabitur sagittis hendrerit ante. Fusce aliquam vestibulum ipsum. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Curabitur vitae diam non enim vestibulum interdum. Aenean id metus id velit ullamcorper pulvinar.</p>
+
+      <p>Pellentesque arcu. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nullam rhoncus aliquam metus. Et harum quidem rerum facilis est et expedita distinctio. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Et harum quidem rerum facilis est et expedita distinctio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec iaculis gravida nulla. Integer malesuada. Duis ante orci, molestie vitae vehicula venenatis, tincidunt ac pede. Phasellus faucibus molestie nisl. Donec vitae arcu. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Donec iaculis gravida nulla. Nulla quis diam. Nulla non arcu lacinia neque faucibus fringilla. Quisque tincidunt scelerisque libero. Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus.</p>
+
+      <p>Aenean fermentum risus id tortor. Nunc auctor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean placerat. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus. Vivamus luctus egestas leo. Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo. Etiam commodo dui eget wisi. Donec iaculis gravida nulla. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Nullam dapibus fermentum ipsum. Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo. Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu. Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus faucibus molestie nisl. Aenean fermentum risus id tortor. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus. Maecenas sollicitudin.</p>
+
+      <p>Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo. Nullam rhoncus aliquam metus. Fusce tellus. Aliquam in lorem sit amet leo accumsan lacinia. Duis condimentum augue id magna semper rutrum. In enim a arcu imperdiet malesuada. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Curabitur bibendum justo non orci. Phasellus et lorem id felis nonummy placerat. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Pellentesque pretium lectus id turpis. Aliquam ante.</p>
+      <h4 id="list-item-3">Item 3</h4>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Etiam commodo dui eget wisi. Quisque porta. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Vivamus luctus egestas leo. Integer malesuada. Praesent in mauris eu tortor porttitor accumsan. Praesent dapibus. Praesent id justo in neque elementum ultrices. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Pellentesque pretium lectus id turpis. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Praesent id justo in neque elementum ultrices. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent dapibus. Etiam posuere lacus quis dolor. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus ac leo pretium faucibus. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Mauris dictum facilisis augue. Nunc dapibus tortor vel mi dapibus sollicitudin. Integer lacinia. Quisque porta. Donec quis nibh at felis congue commodo. Maecenas lorem. Etiam bibendum elit eget erat. Aenean placerat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam commodo dui eget wisi. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Curabitur bibendum justo non orci. Aliquam in lorem sit amet leo accumsan lacinia. Duis risus.</p>
+
+      <p>Etiam egestas wisi a erat. Fusce aliquam vestibulum ipsum. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Duis viverra diam non justo. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Maecenas sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque tincidunt scelerisque libero. Integer in sapien. In enim a arcu imperdiet malesuada.</p>
+
+      <p>Mauris tincidunt sem sed arcu. Aliquam in lorem sit amet leo accumsan lacinia. Integer pellentesque quam vel velit. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam. Maecenas sollicitudin. Integer vulputate sem a nibh rutrum consequat. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Aliquam erat volutpat. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Integer malesuada. Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. Donec quis nibh at felis congue commodo.</p>
+
+      <p>Nulla non lectus sed nisl molestie malesuada. Praesent vitae arcu tempor neque lacinia pretium. Aenean placerat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Phasellus faucibus molestie nisl. Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo. Donec iaculis gravida nulla. Nam quis nulla. Praesent id justo in neque elementum ultrices. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Vestibulum fermentum tortor id mi. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Morbi leo mi, nonummy eget tristique non, rhoncus non leo. Maecenas libero. Curabitur vitae diam non enim vestibulum interdum. Maecenas aliquet accumsan leo. Mauris dictum facilisis augue. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Etiam quis quam.</p>
+      <h4 id="list-item-4">Item 4</h4>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Suspendisse sagittis ultrices augue. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Maecenas sollicitudin. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Fusce wisi. Nam quis nulla. Vivamus porttitor turpis ac leo. Duis ante orci, molestie vitae vehicula venenatis, tincidunt ac pede. Etiam egestas wisi a erat. Mauris metus. Donec vitae arcu. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Praesent id justo in neque elementum ultrices.</p>
+
+      <p>Proin mattis lacinia justo. Nulla non arcu lacinia neque faucibus fringilla. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Donec quis nibh at felis congue commodo. Et harum quidem rerum facilis est et expedita distinctio. Aliquam id dolor. Nam quis nulla. Praesent vitae arcu tempor neque lacinia pretium. Curabitur bibendum justo non orci. Pellentesque arcu. Duis condimentum augue id magna semper rutrum. Curabitur vitae diam non enim vestibulum interdum. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna. Praesent dapibus. Maecenas libero. Aliquam erat volutpat. Morbi leo mi, nonummy eget tristique non, rhoncus non leo. Praesent id justo in neque elementum ultrices. Sed convallis magna eu sem.</p>
+
+      <p>Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu. Sed convallis magna eu sem. Pellentesque ipsum. Aliquam erat volutpat. Vivamus ac leo pretium faucibus. Et harum quidem rerum facilis est et expedita distinctio. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Nullam dapibus fermentum ipsum. Praesent vitae arcu tempor neque lacinia pretium. Curabitur bibendum justo non orci. Nunc tincidunt ante vitae massa. Fusce tellus. Phasellus rhoncus. In rutrum. Integer lacinia. Suspendisse sagittis ultrices augue. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante.</p>
+
+      <p>Vivamus ac leo pretium faucibus. Vivamus porttitor turpis ac leo. Nullam rhoncus aliquam metus. Duis risus. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. Nunc auctor. Suspendisse sagittis ultrices augue. Aliquam ornare wisi eu metus. Donec vitae arcu. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Suspendisse sagittis ultrices augue. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Ut tempus purus at lorem. Pellentesque pretium lectus id turpis. Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.</p>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+  <br>
+  <br>
+  <div class="container-fluid p-2 bg-dark">
     <footer class="my-4 align-items-center">
       <p class="text-center text-white">Copyright © Miloš Tesař C3b, 2022</p>
     </footer>
